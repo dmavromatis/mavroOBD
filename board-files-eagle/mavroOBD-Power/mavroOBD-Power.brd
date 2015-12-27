@@ -90,6 +90,8 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -358,22 +360,22 @@
 <description>Myro:Air Components</description>
 <packages>
 <package name="OBDII-CON">
-<pad name="1" x="-2.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="2" x="-6.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="3" x="1.46" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="4" x="-2.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="3" x="-6.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="5" x="1.46" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
 <text x="-15.49" y="6.0325" size="1.27" layer="21" font="vector">1</text>
 <text x="13.3925" y="6.0325" size="1.27" layer="21" font="vector">8</text>
 <text x="-15.505" y="-1.9675" size="1.27" layer="21" font="vector">9</text>
-<pad name="4" x="-10.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="5" x="-14.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="2" x="-10.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="1" x="-14.54" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="6" x="5.46" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="7" x="9.46" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="8" x="13.46" y="3.81" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="9" x="-2.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="10" x="-6.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="11" x="1.46" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="12" x="-10.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
-<pad name="13" x="-14.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="12" x="-2.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="11" x="-6.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="13" x="1.46" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="10" x="-10.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
+<pad name="9" x="-14.54" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="14" x="5.46" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="15" x="9.46" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
 <pad name="16" x="13.46" y="-4.19" drill="1.65" diameter="2.54" rot="R90"/>
@@ -824,18 +826,19 @@ design rules under a new name.</description>
 <signal name="CAN_P2">
 <contactref element="U$1" pad="2"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="26.85" y1="14.07" x2="26.34" y2="14.07" width="0.4064" layer="1"/>
-<wire x1="26.34" y1="14.07" x2="23.82" y2="11.55" width="0.4064" layer="1"/>
-<wire x1="23.82" y1="11.55" x2="20.73" y2="11.55" width="0.4064" layer="1"/>
 <wire x1="20.73" y1="11.55" x2="16.91" y2="7.73" width="0.4064" layer="1"/>
 <wire x1="16.91" y1="7.73" x2="16.91" y2="4.42" width="0.4064" layer="1"/>
 <wire x1="16.91" y1="4.42" x2="19.4" y2="2.05" width="0.4064" layer="1"/>
+<wire x1="20.73" y1="11.55" x2="28.33" y2="11.55" width="0.4064" layer="1"/>
+<wire x1="28.33" y1="11.55" x2="30.85" y2="14.07" width="0.4064" layer="1"/>
 </signal>
 <signal name="CAN_P10">
 <contactref element="U$1" pad="10"/>
 <contactref element="JP3" pad="4"/>
-<wire x1="26.85" y1="6.07" x2="25.96" y2="6.07" width="0.4064" layer="1"/>
-<wire x1="25.96" y1="6.07" x2="21.94" y2="2.05" width="0.4064" layer="1"/>
+<wire x1="21.94" y1="2.05" x2="21.94" y2="1.94" width="0.4064" layer="1"/>
+<wire x1="21.94" y1="1.94" x2="24" y2="4" width="0.4064" layer="1"/>
+<wire x1="24" y1="4" x2="28.78" y2="4" width="0.4064" layer="1"/>
+<wire x1="28.78" y1="4" x2="30.85" y2="6.07" width="0.4064" layer="1"/>
 </signal>
 <signal name="CAN_P7">
 <contactref element="U$1" pad="7"/>
