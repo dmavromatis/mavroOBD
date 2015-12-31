@@ -7545,7 +7545,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="JP1" library="SparkFun" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH" value="FTDI Basic"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="U$3" library="SparkFun" deviceset="OSHW-LOGO" device="S"/>
-<part name="Q1" library="Testing" deviceset="RESONATOR" device="1:1" value="8mhz / 490-1198-1-ND"/>
+<part name="Q1" library="Testing" deviceset="RESONATOR" device="1:1" value="16mhz / 490-1198-1-ND"/>
 <part name="U3" library="IC" deviceset="MCP2551" device="-SOIC8" value="MCP2551"/>
 <part name="U4" library="IC" deviceset="MCP2515" device="-SOIC18" value="MCP2515"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="47k"/>
@@ -7945,6 +7945,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <junction x="111.76" y="119.38"/>
 <pinref part="VCC1" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VDD"/>
+<wire x1="220.98" y1="177.8" x2="205.74" y2="177.8" width="0.1524" layer="91"/>
+<label x="213.36" y="177.8" size="1.778" layer="95"/>
+<pinref part="P+6" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="D9" class="0">
 <segment>
@@ -8226,14 +8232,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="35.56" x2="113.03" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="PWR" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="3.3V" class="1">
-<segment>
-<pinref part="J1" gate="G$1" pin="VDD"/>
-<wire x1="220.98" y1="177.8" x2="205.74" y2="177.8" width="0.1524" layer="91"/>
-<label x="213.36" y="177.8" size="1.778" layer="95"/>
-<pinref part="P+6" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 </nets>
