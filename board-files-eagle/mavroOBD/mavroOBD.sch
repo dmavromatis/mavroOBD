@@ -7811,6 +7811,11 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="55.88" y1="74.93" x2="73.66" y2="74.93" width="0.1524" layer="91"/>
 <label x="73.66" y="74.93" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VSS(GND)"/>
+<wire x1="220.98" y1="175.26" x2="210.439" y2="175.26" width="0.1524" layer="91"/>
+<label x="210.566" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -7822,6 +7827,11 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="U4" gate="G$1" pin="SO"/>
 <wire x1="55.88" y1="80.01" x2="73.66" y2="80.01" width="0.1524" layer="91"/>
 <label x="73.66" y="80.01" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VPP/MCLR"/>
+<wire x1="220.98" y1="180.34" x2="210.82" y2="180.34" width="0.1524" layer="91"/>
+<label x="210.82" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -7836,9 +7846,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <label x="73.66" y="77.47" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VPP/MCLR"/>
-<wire x1="220.98" y1="180.34" x2="210.82" y2="180.34" width="0.1524" layer="91"/>
-<label x="210.82" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="ICSP_DAT/PGD"/>
+<wire x1="220.98" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
+<label x="210.82" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7946,11 +7956,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
 <label x="198.12" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="VSS(GND)"/>
-<wire x1="220.98" y1="175.26" x2="210.439" y2="175.26" width="0.1524" layer="91"/>
-<label x="210.566" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -8138,11 +8143,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="220.98" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PB2(SS/OC1B)"/>
 <label x="223.52" y="106.68" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="ICSP_DAT/PGD"/>
-<wire x1="220.98" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
-<label x="210.82" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT" class="0">
