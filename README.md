@@ -7,8 +7,8 @@ I have uploaded board designs for an OBD module I puchased from China.  It's a t
 
 This project is based on an Arduino Uno and SeedStudio CAN shield just miniturized to fit in a OBD module.
 
-The module enclousure was purchased from a company in China called AOTAI Industry Co.
-Part #: AOT-130N - ODB Connector with housing
+The module enclousure was purchased from a company in China called AOTAI Industry Co.<br>
+Part #: AOT-130N - ODB Connector with housing<br/>
 Website: www.aotsisz.com
 
 --------
